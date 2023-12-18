@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-#		HQ9+ interpreter on bash. Made by Russanandres 2023
+#		HQ9+ interpreter on bash. Made by Russanandres 12-18-2023
 #		All sources are avialible on my official github:
 #
 #		https://github.com/Russanandres/HQ9-bash
@@ -25,7 +25,7 @@ for (( i=0; i<${#input}; i++ )); do 												# Do cycle: read character by ch
 				  echo "No more bottles of beer on the wall, no more bottles of beer."
 				  echo "Go to the store and buy some more, 99 bottles of beer on the wall.";;						# Echo last final lines
 		"C"|"c"	) let counter=counter+1;;												# Addition counter by 1
-		"+"		) let 1/0;;													# Device one by zero
+		"+"		) let 1/0;;													# Divide one by zero
 		*		) echo "Syntax error!";;											# Syntax error! User typed wrong command
 	esac																# Closing grep process
 done																# Exit from loop
